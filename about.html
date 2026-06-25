@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Retal Rentals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <div class="left">
+          <div class="logo">Retal</div>
+        </div>
+
+        <div class="right">
+          <ul id="nav-menu">
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-house-chimney"></i>
+                Home
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="about.html">
+                <i class="fa-solid fa-circle-user"></i>
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="location.html">
+                <i class="fa-solid fa-location-dot"></i>
+                Location
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-user-clock"></i>
+                Contact
+              </a>
+            </li>
+
+            <li>
+              <button>Log In</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <section class="page-header">
+        <h1>About Retal</h1>
+        <p>
+          We are a rental website built to help renters discover great spaces,
+          compare offers, and rent with confidence.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Our mission</h2>
+        <p>
+          Retal makes renting simple by offering an easy-to-use platform for
+          finding homes, apartments, and vacation rentals. Our team supports
+          renters and owners with transparent listings, secure booking, and
+          local assistance.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>What we offer</h2>
+        <ul>
+          <li>Fast search across curated rental properties</li>
+          <li>Trusted local hosts and verified listings</li>
+          <li>Clear rental details, pricing, and booking support</li>
+        </ul>
+      </section>
+    </div>
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navMenu = document.getElementById("nav-menu");
+
+      if (menuIcon && navMenu) {
+        menuIcon.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      }
+    </script>
+  </body>
+</html>

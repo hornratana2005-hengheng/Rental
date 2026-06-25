@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Retal Rentals</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <div class="left">
+          <div class="logo">Retal</div>
+        </div>
+
+        <div class="right">
+          <ul id="nav-menu">
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-house-chimney"></i>
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-circle-user"></i>
+                About Us
+              </a>
+            </li>
+
+            <li>
+              <a href="location.html">
+                <i class="fa-solid fa-location-dot"></i>
+                Location
+              </a>
+            </li>
+
+            <li class="active">
+              <a href="contact.html">
+                <i class="fa-solid fa-user-clock"></i>
+                Contact
+              </a>
+            </li>
+
+            <li>
+              <button>Log In</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="menu-icon" id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <section class="page-header">
+        <h1>Get in touch with Retal</h1>
+        <p>
+          Need help finding a rental or want to ask about a listing? Contact our
+          support team and we’ll help you move forward with confidence.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>Contact details</h2>
+        <p>Email: support@retalrentals.com</p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 Rental Avenue, City Center, Your Town</p>
+      </section>
+
+      <section class="section">
+        <h2>How to reach us</h2>
+        <ul>
+          <li>
+            Use the email address for rental questions and account support.
+          </li>
+          <li>Call to speak with a rental specialist during business hours.</li>
+          <li>
+            Visit us for property tours and rental consultation appointments.
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script>
+      const menuIcon = document.getElementById("menu-icon");
+      const navMenu = document.getElementById("nav-menu");
+
+      if (menuIcon && navMenu) {
+        menuIcon.addEventListener("click", () => {
+          navMenu.classList.toggle("show");
+        });
+      }
+    </script>
+  </body>
+</html>
