@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Detail</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <a href="location.html">Locations</a>
+        <span>/</span>
+        <span>Property Detail</span>
+      </div>
+
+      <div class="detail-top-row">
+        <div>
+          <a href="index.html" class="back-btn">
+            <i class="fa fa-arrow-left"></i> Back to search
+          </a>
+        </div>
+        <div class="share-actions">
+          <button class="icon-btn">
+            <i class="fa-solid fa-heart"></i> Save
+          </button>
+          <button class="icon-btn">
+            <i class="fa-solid fa-share-nodes"></i> Share
+          </button>
+        </div>
+      </div>
+
+      <div class="detail-grid">
+        <main class="detail-main">
+          <section class="gallery" role="region" aria-label="Property gallery">
+            <div class="main-media">
+              <img id="detail-image" src="" alt="Rental Image" />
+            </div>
+            <div id="thumbnails" class="thumbnails" aria-hidden="false">
+              <!-- thumbnails injected by JS -->
+            </div>
+          </section>
+
+          <section
+            class="detail-content"
+            role="region"
+            aria-label="Property details"
+          >
+            <div class="detail-header">
+              <div>
+                <span id="detail-tag" class="tag"></span>
+                <h1 id="detail-title"></h1>
+                <p class="location-text">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <span id="detail-location"></span>
+                </p>
+              </div>
+              <div class="rating-box">
+                <div id="detail-rating" class="rating"></div>
+                <span id="detail-review-count" class="review-count"></span>
+              </div>
+            </div>
+
+            <p id="detail-desc" class="lead"></p>
+
+            <div class="detail-overview">
+              <div class="overview-item">
+                <strong id="detail-bed"></strong><span>Beds</span>
+              </div>
+              <div class="overview-item">
+                <strong id="detail-bath"></strong><span>Baths</span>
+              </div>
+              <div class="overview-item">
+                <strong id="detail-guests"></strong><span>Guests</span>
+              </div>
+              <div class="overview-item">
+                <strong id="detail-size"></strong><span>Size</span>
+              </div>
+            </div>
+
+            <div class="section">
+              <h2>About this home</h2>
+              <p id="detail-about"></p>
+            </div>
+
+            <div class="section">
+              <h2>Amenities</h2>
+              <div id="amenities" class="amenities-grid"></div>
+            </div>
+
+            <div class="section host-card" aria-label="Host information">
+              <div class="host-avatar"><i class="fa-solid fa-user"></i></div>
+              <div>
+                <p class="host-label">Hosted by</p>
+                <p id="detail-host" class="host-name"></p>
+                <p id="detail-host-since" class="host-meta"></p>
+              </div>
+            </div>
+
+            <div class="section policy-card">
+              <h2>House rules</h2>
+              <ul id="detail-policy"></ul>
+            </div>
+          </section>
+        </main>
+
+        <aside class="booking-panel" aria-label="Booking summary">
+          <div class="booking-card">
+            <div class="price-block">
+              <span class="price-amount" id="detail-price"></span>
+              <span class="price-note">per month</span>
+            </div>
+            <p class="booking-note">Flexible booking with secure payment.</p>
+
+            <div class="booking-meta">
+              <div>
+                <strong>Check-in</strong><span>Immediately available</span>
+              </div>
+              <div>
+                <strong>Guests</strong><span id="detail-guests-small"></span>
+              </div>
+            </div>
+
+            <button class="primary-button">Reserve Now</button>
+            <p class="secure-text">
+              <i class="fa-solid fa-lock"></i> Secure booking with Retal
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script src="detail.js"></script>
+  </body>
+</html>
