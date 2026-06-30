@@ -22,6 +22,68 @@ body {
   padding: 18px;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(15, 23, 36, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(15, 23, 36, 0.08);
+  margin-bottom: 18px;
+}
+
+.logo {
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  color: var(--muted);
+  text-decoration: none;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  font-weight: 600;
+}
+
+.navigation ul li a:hover {
+  background: #eef5ff;
+  color: var(--accent);
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.45rem;
+  cursor: pointer;
+  color: var(--accent);
+  background: transparent;
+  border: 0;
+  padding: 8px;
+  line-height: 1;
+}
+
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
@@ -423,6 +485,33 @@ h1 {
 }
 
 @media (max-width: 899px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .right ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    width: 240px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(15, 23, 36, 0.12);
+    padding: 12px;
+    z-index: 1000;
+    border-radius: 14px;
+  }
+
+  .right ul.show {
+    display: flex;
+  }
+
+  .right ul li,
+  .right ul li a {
+    width: 100%;
+  }
+
   .detail-grid {
     display: block;
   }

@@ -3,58 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Location - Retal Rentals</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>All Categories - Retal Rentals</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
   <body>
     <div class="container">
-      <div class="navigation">
+      <nav class="navigation">
         <div class="left">
           <div class="logo">Retal</div>
         </div>
-
         <div class="right">
           <ul id="nav-menu">
             <li>
-              <a href="index.html">
+              <a href="../index.html">
                 <i class="fa-solid fa-house-chimney"></i>
                 Home
               </a>
             </li>
-
             <li>
-              <a href="about.html">
+              <a href="../about.html">
                 <i class="fa-solid fa-circle-user"></i>
                 About Us
               </a>
             </li>
-
-            <li class="active">
-              <a href="location.html">
+            <li>
+              <a href="../location.html">
                 <i class="fa-solid fa-location-dot"></i>
                 Location
               </a>
             </li>
-
             <li>
-              <a href="contact.html">
+              <a href="../contact.html">
                 <i class="fa-solid fa-user-clock"></i>
                 Contact
               </a>
             </li>
-
-            <li>
-              <button>Log In</button>
-            </li>
           </ul>
-
         </div>
         <button
           class="menu-icon"
@@ -65,16 +53,16 @@
         >
           <i class="fa-solid fa-bars"></i>
         </button>
-      </div>
+      </nav>
 
       <section class="page-header">
-        <h1>Find rentals near you</h1>
+        <h1>All rental categories</h1>
         <p>
-          Retal is a rental website that brings local properties and trusted
-          hosts together in one place.
+          Browse every listing Retal offers, from compact rooms to
+          business-ready commercial spaces.
         </p>
-
-        <form class="search-panel" action="location.html" method="get">
+      </section>
+       <form class="search-panel" action="" method="get">
           <label class="search-field">
             <span>Search</span>
             <input
@@ -126,44 +114,27 @@
             </button>
           </div>
         </form>
-      </section>
+
 
       <section class="section">
-        <h2>Our locations</h2>
-        <p>
-          Explore rental options across the city and surrounding areas. Use our
-          website to browse homes, apartments, and vacation rentals close to
-          your desired neighborhood.
-        </p>
-      </section>
-
-      <section class="section">
-        <h2>All categories</h2>
+        <h2>All listings <span class="muted-count">(<span id="listing-count">0</span>)</span></h2>
         <div class="category-links">
-          <a class="secondary-button" href="categories/">All Categories</a>
-          <a class="secondary-button" href="categories/apartment/">Apartment</a>
-          <a class="secondary-button" href="categories/house/">House</a>
-          <a class="secondary-button" href="categories/villa/">Villa</a>
-          <a class="secondary-button" href="categories/condominium/">Condominium</a>
-          <a class="secondary-button" href="categories/room/">Room</a>
-          <a class="secondary-button" href="categories/office/">Office</a>
-          <a class="secondary-button" href="categories/commercial-space/"
-            >Commercial Space</a
-          >
-          <a class="secondary-button" href="categories/car/">Car</a>
-          <a class="secondary-button" href="categories/land/">Land</a>
+          <a class="secondary-button" href="apartment/">Apartment</a>
+          <a class="secondary-button" href="house/">House</a>
+          <a class="secondary-button" href="villa/">Villa</a>
+          <a class="secondary-button" href="condominium/">Condominium</a>
+          <a class="secondary-button" href="room/">Room</a>
+          <a class="secondary-button" href="office/">Office</a>
+          <a class="secondary-button" href="commercial-space/">Commercial Space</a>
+          <a class="secondary-button" href="car/">Car</a>
+          <a class="secondary-button" href="land/">Land</a>
         </div>
-      </section>
 
-      <section class="section">
-        <h2>How it works</h2>
-        <ol>
-          <li>Search available rental listings by location.</li>
-          <li>Compare prices, features, and availability.</li>
-          <li>Book directly through our secure rental website.</li>
-        </ol>
+        <div class="card" id="all-listings"></div>
       </section>
     </div>
-    <script src="assets/js/menu.js"></script>
+
+    <script src="../assets/js/all-listings.js"></script>
+    <script src="../assets/js/menu.js"></script>
   </body>
 </html>

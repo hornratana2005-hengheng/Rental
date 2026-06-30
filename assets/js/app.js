@@ -1,7 +1,7 @@
 const rentals = [
   {
     id: 1,
-    image: "images/1",
+    image: "assets/images/apartment/A1.webp",
     tag: "Apartment",
     title: "Urban Comfort Apartment",
     desc: "Bright one-bedroom apartment close to shopping and public transport.",
@@ -10,7 +10,7 @@ const rentals = [
   },
   {
     id: 2,
-    image: "images/2",
+    image: "assets/images/villa/V1.webp",
     tag: "Villa",
     title: "Sunset Luxury Villa",
     desc: "Modern villa with private pool, garden and full amenities.",
@@ -19,7 +19,7 @@ const rentals = [
   },
   {
     id: 3,
-    image: "images/3",
+    image: "assets/images/house/H5.webp",
     tag: "House",
     title: "Green Garden Home",
     desc: "Comfortable family house with parking and a spacious backyard.",
@@ -28,7 +28,7 @@ const rentals = [
   },
   {
     id: 4,
-    image: "images/4",
+    image: "assets/images/condominium/C4",
     tag: "Condominium",
     title: "Skyline Residence Condo",
     desc: "Luxury condominium with panoramic city views and gym access.",
@@ -37,7 +37,7 @@ const rentals = [
   },
   {
     id: 5,
-    image: "images/5",
+    image: "assets/images/room/R2.webp",
     tag: "Studio",
     title: "Modern Studio Suite",
     desc: "Cozy, affordable studio perfect for students and solo renters.",
@@ -46,7 +46,7 @@ const rentals = [
   },
   {
     id: 6,
-    image: "images/6",
+    image: "assets/images/house/H4.webp",
     tag: "Townhouse",
     title: "Riverside Townhouse",
     desc: "Elegant townhouse steps from riverside dining and parks.",
@@ -55,7 +55,7 @@ const rentals = [
   },
   {
     id: 7,
-    image: "images/7",
+    image: "assets/images/room/R7.jpg",
     tag: "Guest House",
     title: "Indochine Guest House",
     desc: "Charming guest house near local markets and cultural attractions.",
@@ -64,7 +64,7 @@ const rentals = [
   },
   {
     id: 8,
-    image: "images/8",
+    image: "assets/images/land/L3.webp",
     tag: "Vacation Rental",
     title: "Garden Retreat",
     desc: "Quiet vacation rental with garden access and outdoor seating.",
@@ -73,7 +73,7 @@ const rentals = [
   },
   {
     id: 9,
-    image: "images/9",
+    image: "assets/images/office/O9.webp",
     tag: "Loft",
     title: "City Loft",
     desc: "Open-plan loft in the heart of the city, ideal for short stays.",
@@ -82,7 +82,7 @@ const rentals = [
   },
   {
     id: 10,
-    image: "images/10",
+    image: "assets/images/house/beach_house.webp",
     tag: "Beach House",
     title: "Coastal Beach House",
     desc: "Relaxing beach house with ocean views and easy access to the shore.",
@@ -91,7 +91,7 @@ const rentals = [
   },
   {
     id: 11,
-    image: "images/11",
+    image: "assets/images/house/H9.webp",
     tag: "Countryside",
     title: "Country Cottage",
     desc: "Peaceful cottage in the countryside, perfect for weekend getaways.",
@@ -100,7 +100,7 @@ const rentals = [
   },
   {
     id: 12,
-    image: "images/12",
+    image: "assets/images/villa/V2.webp",
     tag: "Resort",
     title: "Hilltop Resort Villa",
     desc: "Exclusive resort villa with stunning views and full-service amenities.",
@@ -123,17 +123,9 @@ rentals.forEach((rental) => {
                     <span><i class="fa-solid fa-bed"></i> ${rental.bed}</span>
                     <span><i class="fa-solid fa-location-dot"></i> ${rental.location}</span>
                 </div>
-                <a class="secondary-button" href="detail.html?id=${rental.id}">View Details</a>
+                <a class="secondary-button" style="text-align:center;" href="detail.html?id=${rental.id}">View Details</a>
             </div>
         </article>
     `;
 });
 
-const menuIcon = document.getElementById("menu-icon");
-const navMenu = document.getElementById("nav-menu");
-
-if (menuIcon && navMenu) {
-  menuIcon.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-  });
-}

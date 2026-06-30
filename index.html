@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Retal Rentals</title>
+    <title>Rentals Website</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
       <!-- Navigation -->
       <nav class="navigation">
         <div class="left">
-          <div class="logo">Retal</div>
+          <div class="logo">🏡Rental</div>
         </div>
 
         <div class="right">
@@ -55,11 +55,15 @@
             </li>
           </ul>
         </div>
-
-        <!-- Mobile Menu Button -->
-        <div class="menu-icon" id="menu-icon">
+        <button
+          class="menu-icon"
+          id="menu-icon"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="nav-menu"
+        >
           <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
       </nav>
 
       <!-- Hero Section -->
@@ -71,7 +75,75 @@
           with confidence.
         </p>
 
+        <form class="search-panel" action="location.html" method="get">
+          <label class="search-field">
+            <span>Search</span>
+            <input
+              type="search"
+              name="keyword"
+              placeholder="Apartment, villa, office"
+            />
+          </label>
+
+          <label class="search-field">
+            <span>Location</span>
+            <input type="text" name="location" placeholder="Phnom Penh" />
+          </label>
+
+          <label class="search-field">
+            <span>Type</span>
+            <select name="type">
+              <option value="">Any type</option>
+              <option value="apartment">Apartment</option>
+              <option value="house">House</option>
+              <option value="villa">Villa</option>
+              <option value="condominium">Condominium</option>
+              <option value="room">Room</option>
+              <option value="office">Office</option>
+              <option value="commercial-space">Commercial Space</option>
+              <option value="car">Car</option>
+              <option value="land">Land</option>
+            </select>
+          </label>
+
+          <label class="search-field">
+            <span>Budget</span>
+            <select name="budget">
+              <option value="">Any budget</option>
+              <option value="300">$300+</option>
+              <option value="600">$600+</option>
+              <option value="900">$900+</option>
+              <option value="1200">$1,200+</option>
+            </select>
+          </label>
+
+          <div class="search-actions">
+            <button class="search-button" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              Search
+            </button>
+            <button class="clear-button" type="reset">
+              <i class="fa-solid fa-rotate-left"></i>
+            </button>
+          </div>
+        </form>
+
         <a href="location.html" class="primary-button"> Explore Locations </a>
+
+        <div class="feature-strip">
+          <div class="feature-item">
+            <strong>Verified listings</strong>
+            <p>Trusted homes and professional hosts.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Flexible booking</strong>
+            <p>Reserve properties with clear terms and support.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Local expertise</strong>
+            <p>Tailored recommendations for every lifestyle.</p>
+          </div>
+        </div>
       </section>
 
       <!-- About Section -->
@@ -84,14 +156,39 @@
         </p>
       </section>
 
+      <section class="section">
+        <h2>Categories</h2>
+        <div class="category">
+          <div class="category-links">
+            <a class="secondary-button" href="categories/">All Categories</a>
+            <a class="secondary-button" href="categories/apartment/">Apartment</a>
+            <a class="secondary-button" href="categories/house/">House</a>
+            <a class="secondary-button" href="categories/villa/">Villa</a>
+            <a class="secondary-button" href="categories/condominium/">Condominium</a>
+            <a class="secondary-button" href="categories/room/">Room</a>
+            <a class="secondary-button" href="categories/office/">Office</a>
+            <a class="secondary-button" href="categories/commercial-space/"
+              >Commercial Space</a
+            >
+            <a class="secondary-button" href="categories/car/">Car</a>
+            <a class="secondary-button" href="categories/land/">Land</a>
+          </div>
+        </div>
+      </section>
+
       <!-- Cards -->
-      <h1 style="margin-top: 30px">Popular Rentals</h1>
+      <h2 class="section-title">Popular Rentals</h2>
+      <p class="section-intro">
+        A curated selection of premium properties featuring elegant interiors
+        and modern amenities.
+      </p>
 
       <div class="card" id="cards">
         <!-- Cards generated by JavaScript -->
       </div>
     </div>
 
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>

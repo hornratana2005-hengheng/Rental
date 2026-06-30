@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rentals</title>
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navigation">
+        <div class="left">
+          <div class="logo">Retal</div>
+        </div>
+        <div class="right">
+          <ul id="nav-menu">
+            <li>
+              <a href="../../index.html"
+                ><i class="fa-solid fa-house-chimney"></i> Home</a
+              >
+            </li>
+            <li>
+              <a href="../../about.html"
+                ><i class="fa-solid fa-circle-user"></i> About Us</a
+              >
+            </li>
+            <li>
+              <a href="../../location.html"
+                ><i class="fa-solid fa-location-dot"></i> Location</a
+              >
+            </li>
+            <li>
+              <a href="../../contact.html"
+                ><i class="fa-solid fa-user-clock"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <button
+          class="menu-icon"
+          id="menu-icon"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="nav-menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <form class="search-panel" action="location.html" method="get">
+        <label class="search-field">
+          <span>Search</span>
+          <input
+            type="search"
+            name="keyword"
+            placeholder="Apartment, villa, office"
+          />
+        </label>
+
+        <label class="search-field">
+          <span>Location</span>
+          <input type="text" name="location" placeholder="Phnom Penh" />
+        </label>
+
+        <label class="search-field">
+          <span>Type</span>
+          <select name="type">
+            <option value="">Any type</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="villa">Villa</option>
+            <option value="condominium">Condominium</option>
+            <option value="room">Room</option>
+            <option value="office">Office</option>
+            <option value="commercial-space">Commercial Space</option>
+            <option value="land">Land</option>
+          </select>
+        </label>
+
+        <label class="search-field">
+          <span>Budget</span>
+          <select name="budget">
+            <option value="">Any budget</option>
+            <option value="300">$300+</option>
+            <option value="600">$600+</option>
+            <option value="900">$900+</option>
+            <option value="1200">$1,200+</option>
+          </select>
+        </label>
+
+        <div class="search-actions">
+          <button class="search-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+          <button class="clear-button" type="reset">
+            <i class="fa-solid fa-rotate-left"></i>
+          </button>
+        </div>
+      </form>
+
+      <div id="category-content"></div>
+    </div>
+
+    <script src="./category.js"></script>
+    <script src="../../assets/js/menu.js"></script>
+  </body>
+</html>

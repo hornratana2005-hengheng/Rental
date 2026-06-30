@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Retal Rentals</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -55,50 +55,104 @@
             </li>
           </ul>
         </div>
-
-        <!-- Mobile menu button -->
-        <div class="menu-icon" id="menu-icon">
+        <button
+          class="menu-icon"
+          id="menu-icon"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="nav-menu"
+        >
           <i class="fa-solid fa-bars"></i>
-        </div>
+        </button>
       </div>
 
       <section class="page-header">
-        <h1>Get in touch with Retal</h1>
+        <h1>Contact Retal</h1>
         <p>
-          Need help finding a rental or want to ask about a listing? Contact our
-          support team and we’ll help you move forward with confidence.
+          Ask about a listing, booking, or rental category. Our team will help
+          you find the right next step.
         </p>
       </section>
 
-      <section class="section">
-        <h2>Contact details</h2>
-        <p>Email: support@retalrentals.com</p>
-        <p>Phone: +1 (555) 123-4567</p>
-        <p>Address: 123 Rental Avenue, City Center, Your Town</p>
-      </section>
+      <section class="section contact-section">
+        <div class="contact-info">
+          <h2>Talk to us</h2>
+          <p>
+            Send a message for rental questions, property tours, account
+            support, or car rental requests.
+          </p>
 
-      <section class="section">
-        <h2>How to reach us</h2>
-        <ul>
-          <li>
-            Use the email address for rental questions and account support.
-          </li>
-          <li>Call to speak with a rental specialist during business hours.</li>
-          <li>
-            Visit us for property tours and rental consultation appointments.
-          </li>
-        </ul>
+          <div class="contact-methods">
+            <a class="contact-method" href="mailto:support@retalrentals.com">
+              <i class="fa-solid fa-envelope"></i>
+              <span>
+                <strong>Email</strong>
+                support@retalrentals.com
+              </span>
+            </a>
+
+            <a class="contact-method" href="tel:+15551234567">
+              <i class="fa-solid fa-phone"></i>
+              <span>
+                <strong>Phone</strong>
+                +1 (555) 123-4567
+              </span>
+            </a>
+
+            <div class="contact-method">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>
+                <strong>Office</strong>
+                123 Rental Avenue, City Center
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="" method="post">
+          <label class="form-field">
+            <span>Name</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+
+          <label class="form-field">
+            <span>Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </label>
+
+          <label class="form-field">
+            <span>Topic</span>
+            <select name="topic" required>
+              <option value="">Choose a topic</option>
+              <option value="listing">Listing question</option>
+              <option value="booking">Booking support</option>
+              <option value="property">List a property</option>
+              <option value="car">Car rental</option>
+            </select>
+          </label>
+
+          <label class="form-field">
+            <span>Message</span>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Tell us what you need help with"
+              required
+            ></textarea>
+          </label>
+
+          <button class="primary-button contact-submit" type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Send Message
+          </button>
+        </form>
       </section>
     </div>
-    <script>
-      const menuIcon = document.getElementById("menu-icon");
-      const navMenu = document.getElementById("nav-menu");
-
-      if (menuIcon && navMenu) {
-        menuIcon.addEventListener("click", () => {
-          navMenu.classList.toggle("show");
-        });
-      }
-    </script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>

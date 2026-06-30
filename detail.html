@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="detail.css" />
+    <link rel="stylesheet" href="assets/css/detail.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -17,6 +17,49 @@
 
   <body>
     <div class="container">
+      <nav class="navigation">
+        <div class="left">
+          <div class="logo">Retal</div>
+        </div>
+        <div class="right">
+          <ul id="nav-menu">
+            <li>
+              <a href="index.html">
+                <i class="fa-solid fa-house-chimney"></i>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="fa-solid fa-circle-user"></i>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="location.html">
+                <i class="fa-solid fa-location-dot"></i>
+                Location
+              </a>
+            </li>
+            <li>
+              <a href="contact.html">
+                <i class="fa-solid fa-user-clock"></i>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="menu-icon"
+          id="menu-icon"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="nav-menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+
       <div class="breadcrumb">
         <a href="index.html">Home</a>
         <span>/</span>
@@ -24,6 +67,25 @@
         <span>/</span>
         <span>Property Detail</span>
       </div>
+
+      <section class="section detail-category-section">
+        <div class="category">
+          <div class="category-links">
+            <a class="secondary-button" href="categories/">All Categories</a>
+            <a class="secondary-button" href="categories/apartment/">Apartment</a>
+            <a class="secondary-button" href="categories/house/">House</a>
+            <a class="secondary-button" href="categories/villa/">Villa</a>
+            <a class="secondary-button" href="categories/condominium/">Condominium</a>
+            <a class="secondary-button" href="categories/room/">Room</a>
+            <a class="secondary-button" href="categories/office/">Office</a>
+            <a class="secondary-button" href="categories/commercial-space/"
+              >Commercial Space</a
+            >
+            <a class="secondary-button" href="categories/car/">Car</a>
+            <a class="secondary-button" href="categories/land/">Land</a>
+          </div>
+        </div>
+      </section>
 
       <div class="detail-top-row">
         <div>
@@ -141,6 +203,7 @@
       </div>
     </div>
 
-    <script src="detail.js"></script>
+    <script src="assets/js/detail.js"></script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>

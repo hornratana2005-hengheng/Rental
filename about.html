@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - Retal Rentals</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -54,11 +54,17 @@
               <button>Log In</button>
             </li>
           </ul>
-        </div>
 
-        <div class="menu-icon" id="menu-icon">
-          <i class="fa-solid fa-bars"></i>
         </div>
+        <button
+          class="menu-icon"
+          id="menu-icon"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="nav-menu"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
 
       <section class="page-header">
@@ -97,68 +103,71 @@
 
         <div class="card">
           <article class="card-item">
-            <img src="images/1" alt="Apartments" />
+            <img src="assets/images/apartment/A1.webp" alt="Apartments" />
             <div class="card-content">
               <span class="card-tag">Apartments</span>
               <h3 class="card-title">Apartments</h3>
               <p class="card-text">
                 One- to three-bedroom apartments in city and suburban locations.
               </p>
-              <a class="secondary-button" href="location.html"
+              <a class="secondary-button" href="categories/apartment/"
                 >Browse Apartments</a
               >
             </div>
           </article>
 
           <article class="card-item">
-            <img src="images/2" alt="Houses" />
+            <img src="assets/images/house/H1.webp" alt="Houses" />
             <div class="card-content">
               <span class="card-tag">Houses</span>
               <h3 class="card-title">Houses</h3>
               <p class="card-text">
                 Family homes with yards, parking, and neighborhood amenities.
               </p>
-              <a class="secondary-button" href="location.html">Browse Houses</a>
+              <a class="secondary-button" href="categories/house/">Browse Houses</a>
             </div>
           </article>
 
           <article class="card-item">
-            <img src="images/3" alt="Studios" />
+            <img src="assets/images/room/R1.jpg" alt="Studios" />
             <div class="card-content">
               <span class="card-tag">Studios</span>
               <h3 class="card-title">Studios</h3>
               <p class="card-text">
                 Compact, affordable studios ideal for students and solo renters.
               </p>
-              <a class="secondary-button" href="location.html"
+              <a class="secondary-button" href="categories/room/"
                 >Browse Studios</a
               >
             </div>
           </article>
 
           <article class="card-item">
-            <img src="images/4" alt="Villas" />
+            <img src="assets/images/villa/V1.webp" alt="Villas" />
             <div class="card-content">
               <span class="card-tag">Villas</span>
               <h3 class="card-title">Villas</h3>
               <p class="card-text">
                 Luxury villas and vacation homes for short-term or long stays.
               </p>
-              <a class="secondary-button" href="location.html">Browse Villas</a>
+              <a class="secondary-button" href="categories/villa/">Browse Villas</a>
+            </div>
+          </article>
+
+          <article class="card-item">
+            <img src="assets/images/car/C3.webp" alt="Cars" />
+            <div class="card-content">
+              <span class="card-tag">Cars</span>
+              <h3 class="card-title">Cars</h3>
+              <p class="card-text">
+                Daily and monthly car rentals for city trips and longer travel.
+              </p>
+              <a class="secondary-button" href="categories/car/">Browse Cars</a>
             </div>
           </article>
         </div>
       </section>
     </div>
-    <script>
-      const menuIcon = document.getElementById("menu-icon");
-      const navMenu = document.getElementById("nav-menu");
-
-      if (menuIcon && navMenu) {
-        menuIcon.addEventListener("click", () => {
-          navMenu.classList.toggle("show");
-        });
-      }
-    </script>
+    <script src="assets/js/menu.js"></script>
   </body>
 </html>
