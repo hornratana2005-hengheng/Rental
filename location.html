@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Location - Retal Rentals</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Rental Website</title>
+    <link rel="stylesheet" href="assets/css/location.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,7 +17,9 @@
     <div class="container">
       <div class="navigation">
         <div class="left">
-          <div class="logo">Retal</div>
+          <div class="logo">
+            <i class="fa-solid fa-house-chimney"></i> Rental
+          </div>
         </div>
 
         <div class="right">
@@ -54,7 +56,6 @@
               <button>Log In</button>
             </li>
           </ul>
-
         </div>
         <button
           class="menu-icon"
@@ -121,7 +122,11 @@
               <i class="fa-solid fa-magnifying-glass"></i>
               Search
             </button>
-            <button class="clear-button" type="reset">
+            <button
+              class="clear-button"
+              type="reset"
+              aria-label="Clear search form"
+            >
               <i class="fa-solid fa-rotate-left"></i>
             </button>
           </div>
@@ -140,18 +145,23 @@
       <section class="section">
         <h2>All categories</h2>
         <div class="category-links">
-          <a class="secondary-button" href="categories/">All Categories</a>
-          <a class="secondary-button" href="categories/apartment/">Apartment</a>
-          <a class="secondary-button" href="categories/house/">House</a>
-          <a class="secondary-button" href="categories/villa/">Villa</a>
-          <a class="secondary-button" href="categories/condominium/">Condominium</a>
-          <a class="secondary-button" href="categories/room/">Room</a>
-          <a class="secondary-button" href="categories/office/">Office</a>
-          <a class="secondary-button" href="categories/commercial-space/"
+          <a class="secondary-button" href="location.html?type=apartment"
+            >Apartment</a
+          >
+          <a class="secondary-button" href="location.html?type=house">House</a>
+          <a class="secondary-button" href="location.html?type=villa">Villa</a>
+          <a class="secondary-button" href="location.html?type=condominium"
+            >Condominium</a
+          >
+          <a class="secondary-button" href="location.html?type=room">Room</a>
+          <a class="secondary-button" href="location.html?type=office"
+            >Office</a
+          >
+          <a class="secondary-button" href="location.html?type=commercial-space"
             >Commercial Space</a
           >
-          <a class="secondary-button" href="categories/car/">Car</a>
-          <a class="secondary-button" href="categories/land/">Land</a>
+          <a class="secondary-button" href="location.html?type=car">Car</a>
+          <a class="secondary-button" href="location.html?type=land">Land</a>
         </div>
       </section>
 
@@ -163,7 +173,21 @@
           <li>Book directly through our secure rental website.</li>
         </ol>
       </section>
+
+      <section class="section">
+        <h2>Rental listings</h2>
+        <p>
+          Browse all available rental cards below. Use the search filters or
+          location link to highlight specific areas.
+        </p>
+        <div id="cards" class="cards-grid"></div>
+      </section>
     </div>
-    <script src="assets/js/menu.js"></script>
+
+    <div id="site-footer"></div>
+
+    <script src="assets/js/all-listings.js"></script>
+    <script src="assets/js/location.js"></script>
+    <script src="assets/js/template.js"></script>
   </body>
 </html>

@@ -12,46 +12,9 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navigation">
-        <div class="left">
-          <div class="logo">Retal</div>
-        </div>
-        <div class="right">
-          <ul id="nav-menu">
-            <li>
-              <a href="../../index.html"
-                ><i class="fa-solid fa-house-chimney"></i> Home</a
-              >
-            </li>
-            <li>
-              <a href="../../about.html"
-                ><i class="fa-solid fa-circle-user"></i> About Us</a
-              >
-            </li>
-            <li>
-              <a href="../../location.html"
-                ><i class="fa-solid fa-location-dot"></i> Location</a
-              >
-            </li>
-            <li>
-              <a href="../../contact.html"
-                ><i class="fa-solid fa-user-clock"></i> Contact</a
-              >
-            </li>
-          </ul>
-        </div>
+      <div id="site-header"></div>
 
-        <button
-          class="menu-icon"
-          id="menu-icon"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-controls="nav-menu"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
-      <form class="search-panel" action="location.html" method="get">
+<form class="search-panel" action="location.html" method="get">
         <label class="search-field">
           <span>Search</span>
           <input
@@ -97,7 +60,11 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             Search
           </button>
-          <button class="clear-button" type="reset">
+          <button
+            class="clear-button"
+            type="reset"
+            aria-label="Clear search form"
+          >
             <i class="fa-solid fa-rotate-left"></i>
           </button>
         </div>
@@ -106,7 +73,9 @@
       <div id="category-content"></div>
     </div>
 
-    <script src="./category.js"></script>
-    <script src="../../assets/js/menu.js"></script>
-  </body>
+    <div id="site-footer"></div>
+
+<script src="./category.js"></script>
+    <script src="../../assets/js/template.js"></script>
+</body>
 </html>

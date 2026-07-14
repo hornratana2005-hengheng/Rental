@@ -123,9 +123,8 @@ rentals.forEach((rental) => {
                     <span><i class="fa-solid fa-bed"></i> ${rental.bed}</span>
                     <span><i class="fa-solid fa-location-dot"></i> ${rental.location}</span>
                 </div>
-                <a class="secondary-button" style="text-align:center;" href="detail.html?id=${rental.id}">View Details</a>
+                <a class="secondary-button" style="text-align:center;" href="location.html">View Location</a>
             </div>
         </article>
     `;
 });
-

@@ -15,58 +15,9 @@
   <body>
     <div class="container">
       <!-- Navigation -->
-      <nav class="navigation">
-        <div class="left">
-          <div class="logo">🏡Rental</div>
-        </div>
+      <div id="site-header"></div>
 
-        <div class="right">
-          <ul id="nav-menu">
-            <li class="active">
-              <a href="index.html">
-                <i class="fa-solid fa-house-chimney"></i>
-                Home
-              </a>
-            </li>
-
-            <li>
-              <a href="about.html">
-                <i class="fa-solid fa-circle-user"></i>
-                About Us
-              </a>
-            </li>
-
-            <li>
-              <a href="location.html">
-                <i class="fa-solid fa-location-dot"></i>
-                Location
-              </a>
-            </li>
-
-            <li>
-              <a href="contact.html">
-                <i class="fa-solid fa-user-clock"></i>
-                Contact
-              </a>
-            </li>
-
-            <li>
-              <button>Log In</button>
-            </li>
-          </ul>
-        </div>
-        <button
-          class="menu-icon"
-          id="menu-icon"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-controls="nav-menu"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
-
-      <!-- Hero Section -->
+<!-- Hero Section -->
       <section class="page-header">
         <h1>Rent smarter with Retal</h1>
 
@@ -122,7 +73,11 @@
               <i class="fa-solid fa-magnifying-glass"></i>
               Search
             </button>
-            <button class="clear-button" type="reset">
+            <button
+              class="clear-button"
+              type="reset"
+              aria-label="Clear search form"
+            >
               <i class="fa-solid fa-rotate-left"></i>
             </button>
           </div>
@@ -156,26 +111,6 @@
         </p>
       </section>
 
-      <section class="section">
-        <h2>Categories</h2>
-        <div class="category">
-          <div class="category-links">
-            <a class="secondary-button" href="categories/">All Categories</a>
-            <a class="secondary-button" href="categories/apartment/">Apartment</a>
-            <a class="secondary-button" href="categories/house/">House</a>
-            <a class="secondary-button" href="categories/villa/">Villa</a>
-            <a class="secondary-button" href="categories/condominium/">Condominium</a>
-            <a class="secondary-button" href="categories/room/">Room</a>
-            <a class="secondary-button" href="categories/office/">Office</a>
-            <a class="secondary-button" href="categories/commercial-space/"
-              >Commercial Space</a
-            >
-            <a class="secondary-button" href="categories/car/">Car</a>
-            <a class="secondary-button" href="categories/land/">Land</a>
-          </div>
-        </div>
-      </section>
-
       <!-- Cards -->
       <h2 class="section-title">Popular Rentals</h2>
       <p class="section-intro">
@@ -188,7 +123,9 @@
       </div>
     </div>
 
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/menu.js"></script>
-  </body>
+    <div id="site-footer"></div>
+
+<script src="assets/js/app.js"></script>
+    <script src="assets/js/template.js"></script>
+</body>
 </html>

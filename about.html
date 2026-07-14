@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Retal Rentals</title>
+    <title>Rental Website</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -17,7 +17,9 @@
     <div class="container">
       <div class="navigation">
         <div class="left">
-          <div class="logo">Retal</div>
+          <div class="logo">
+            <i class="fa-solid fa-house-chimney"></i> Rental
+          </div>
         </div>
 
         <div class="right">
@@ -54,7 +56,6 @@
               <button>Log In</button>
             </li>
           </ul>
-
         </div>
         <button
           class="menu-icon"
@@ -67,48 +68,80 @@
         </button>
       </div>
 
-      <section class="page-header">
-        <h1>About Retal</h1>
+      <section class="page-header about-header">
+        <p class="eyebrow">About Us</p>
+        <h1>Modern rental search with local trust</h1>
         <p>
-          We are a rental website built to help renters discover great spaces,
-          compare offers, and rent with confidence.
+          Retal connects renters with verified spaces, clear pricing, and fast
+          booking support for homes, apartments, offices, and vehicles.
         </p>
       </section>
 
       <section class="section">
-        <h2>Our mission</h2>
-        <p>
-          Retal makes renting simple by offering an easy-to-use platform for
-          finding homes, apartments, and vacation rentals. Our team supports
-          renters and owners with transparent listings, secure booking, and
-          local assistance.
-        </p>
+        <div class="about-grid">
+          <div>
+            <h2>Our mission</h2>
+            <p>
+              We make renting simple by offering smart search, honest listings,
+              and a seamless experience from discovery to move-in.
+            </p>
+            <ul class="checklist">
+              <li>Verified property details and transparent pricing</li>
+              <li>Fast search with useful filters for every rental type</li>
+              <li>Local support for booking, questions, and safe stays</li>
+            </ul>
+          </div>
+
+          <div class="about-stats">
+            <div class="about-stat">
+              <strong>12K+</strong>
+              <span>Verified rentals</span>
+            </div>
+            <div class="about-stat">
+              <strong>4.9/5</strong>
+              <span>Average guest rating</span>
+            </div>
+            <div class="about-stat">
+              <strong>24/7</strong>
+              <span>Support available</span>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section">
         <h2>What we offer</h2>
-        <ul>
-          <li>Fast search across curated rental properties</li>
-          <li>Trusted local hosts and verified listings</li>
-          <li>Clear rental details, pricing, and booking support</li>
-        </ul>
+        <div class="feature-strip">
+          <div class="feature-item">
+            <strong>Trust first</strong>
+            <p>Every property is verified so you can book with confidence.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Clear pricing</strong>
+            <p>See fees, terms, and availability before you reserve.</p>
+          </div>
+          <div class="feature-item">
+            <strong>Fast discovery</strong>
+            <p>Filter by type, location, budget, and move-in date.</p>
+          </div>
+        </div>
       </section>
 
       <section class="section">
-        <h2>Rental Categories</h2>
+        <h2>Popular categories</h2>
         <p>
-          Explore popular rental categories to find the space that fits your
-          needs.
+          Browse the most searched rental types and find the right space
+          quickly.
         </p>
 
         <div class="card">
           <article class="card-item">
             <img src="assets/images/apartment/A1.webp" alt="Apartments" />
             <div class="card-content">
-              <span class="card-tag">Apartments</span>
-              <h3 class="card-title">Apartments</h3>
+              <span class="card-tag">Apartment</span>
+              <h3 class="card-title">City apartments</h3>
               <p class="card-text">
-                One- to three-bedroom apartments in city and suburban locations.
+                Comfortable city homes with nearby transit and modern amenities.
               </p>
               <a class="secondary-button" href="categories/apartment/"
                 >Browse Apartments</a
@@ -119,25 +152,13 @@
           <article class="card-item">
             <img src="assets/images/house/H1.webp" alt="Houses" />
             <div class="card-content">
-              <span class="card-tag">Houses</span>
-              <h3 class="card-title">Houses</h3>
+              <span class="card-tag">House</span>
+              <h3 class="card-title">Family homes</h3>
               <p class="card-text">
-                Family homes with yards, parking, and neighborhood amenities.
+                Spacious rentals with yards, privacy, and neighborhood comfort.
               </p>
-              <a class="secondary-button" href="categories/house/">Browse Houses</a>
-            </div>
-          </article>
-
-          <article class="card-item">
-            <img src="assets/images/room/R1.jpg" alt="Studios" />
-            <div class="card-content">
-              <span class="card-tag">Studios</span>
-              <h3 class="card-title">Studios</h3>
-              <p class="card-text">
-                Compact, affordable studios ideal for students and solo renters.
-              </p>
-              <a class="secondary-button" href="categories/room/"
-                >Browse Studios</a
+              <a class="secondary-button" href="categories/house/"
+                >Browse Houses</a
               >
             </div>
           </article>
@@ -145,22 +166,25 @@
           <article class="card-item">
             <img src="assets/images/villa/V1.webp" alt="Villas" />
             <div class="card-content">
-              <span class="card-tag">Villas</span>
-              <h3 class="card-title">Villas</h3>
+              <span class="card-tag">Villa</span>
+              <h3 class="card-title">Luxury stays</h3>
               <p class="card-text">
-                Luxury villas and vacation homes for short-term or long stays.
+                Premium homes for vacation rentals and special getaways.
               </p>
-              <a class="secondary-button" href="categories/villa/">Browse Villas</a>
+              <a class="secondary-button" href="categories/villa/"
+                >Browse Villas</a
+              >
             </div>
           </article>
 
           <article class="card-item">
             <img src="assets/images/car/C3.webp" alt="Cars" />
             <div class="card-content">
-              <span class="card-tag">Cars</span>
-              <h3 class="card-title">Cars</h3>
+              <span class="card-tag">Car</span>
+              <h3 class="card-title">Vehicle rentals</h3>
               <p class="card-text">
-                Daily and monthly car rentals for city trips and longer travel.
+                Flexible car options for short trips, errands, and business
+                travel.
               </p>
               <a class="secondary-button" href="categories/car/">Browse Cars</a>
             </div>
@@ -168,6 +192,9 @@
         </div>
       </section>
     </div>
-    <script src="assets/js/menu.js"></script>
+
+    <div id="site-footer"></div>
+
+    <script src="assets/js/template.js"></script>
   </body>
 </html>

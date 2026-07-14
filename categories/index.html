@@ -12,112 +12,77 @@
   </head>
   <body>
     <div class="container">
-      <nav class="navigation">
-        <div class="left">
-          <div class="logo">Retal</div>
-        </div>
-        <div class="right">
-          <ul id="nav-menu">
-            <li>
-              <a href="../index.html">
-                <i class="fa-solid fa-house-chimney"></i>
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="../about.html">
-                <i class="fa-solid fa-circle-user"></i>
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="../location.html">
-                <i class="fa-solid fa-location-dot"></i>
-                Location
-              </a>
-            </li>
-            <li>
-              <a href="../contact.html">
-                <i class="fa-solid fa-user-clock"></i>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button
-          class="menu-icon"
-          id="menu-icon"
-          type="button"
-          aria-label="Open navigation menu"
-          aria-controls="nav-menu"
-        >
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </nav>
+      <div id="site-header"></div>
 
-      <section class="page-header">
+<section class="page-header">
         <h1>All rental categories</h1>
         <p>
           Browse every listing Retal offers, from compact rooms to
           business-ready commercial spaces.
         </p>
       </section>
-       <form class="search-panel" action="" method="get">
-          <label class="search-field">
-            <span>Search</span>
-            <input
-              type="search"
-              name="keyword"
-              placeholder="Apartment, villa, office"
-            />
-          </label>
+      <form class="search-panel" action="" method="get">
+        <label class="search-field">
+          <span>Search</span>
+          <input
+            type="search"
+            name="keyword"
+            placeholder="Apartment, villa, office"
+          />
+        </label>
 
-          <label class="search-field">
-            <span>Location</span>
-            <input type="text" name="location" placeholder="Phnom Penh" />
-          </label>
+        <label class="search-field">
+          <span>Location</span>
+          <input type="text" name="location" placeholder="Phnom Penh" />
+        </label>
 
-          <label class="search-field">
-            <span>Type</span>
-            <select name="type">
-              <option value="">Any type</option>
-              <option value="apartment">Apartment</option>
-              <option value="house">House</option>
-              <option value="villa">Villa</option>
-              <option value="condominium">Condominium</option>
-              <option value="room">Room</option>
-              <option value="office">Office</option>
-              <option value="commercial-space">Commercial Space</option>
-              <option value="car">Car</option>
-              <option value="land">Land</option>
-            </select>
-          </label>
+        <label class="search-field">
+          <span>Type</span>
+          <select name="type">
+            <option value="">Any type</option>
+            <option value="apartment">Apartment</option>
+            <option value="house">House</option>
+            <option value="villa">Villa</option>
+            <option value="condominium">Condominium</option>
+            <option value="room">Room</option>
+            <option value="office">Office</option>
+            <option value="commercial-space">Commercial Space</option>
+            <option value="car">Car</option>
+            <option value="land">Land</option>
+          </select>
+        </label>
 
-          <label class="search-field">
-            <span>Budget</span>
-            <select name="budget">
-              <option value="">Any budget</option>
-              <option value="300">$300+</option>
-              <option value="600">$600+</option>
-              <option value="900">$900+</option>
-              <option value="1200">$1,200+</option>
-            </select>
-          </label>
+        <label class="search-field">
+          <span>Budget</span>
+          <select name="budget">
+            <option value="">Any budget</option>
+            <option value="300">$300+</option>
+            <option value="600">$600+</option>
+            <option value="900">$900+</option>
+            <option value="1200">$1,200+</option>
+          </select>
+        </label>
 
-          <div class="search-actions">
-            <button class="search-button" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              Search
-            </button>
-            <button class="clear-button" type="reset">
-              <i class="fa-solid fa-rotate-left"></i>
-            </button>
-          </div>
-        </form>
-
+        <div class="search-actions">
+          <button class="search-button" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+          <button
+            class="clear-button"
+            type="reset"
+            aria-label="Clear search form"
+          >
+            <i class="fa-solid fa-rotate-left"></i>
+          </button>
+        </div>
+      </form>
 
       <section class="section">
-        <h2>All listings <span class="muted-count">(<span id="listing-count">0</span>)</span></h2>
+        <h2>
+          All listings
+          <span class="muted-count">(<span id="listing-count">0</span>)</span>
+        </h2>
         <div class="category-links">
           <a class="secondary-button" href="apartment/">Apartment</a>
           <a class="secondary-button" href="house/">House</a>
@@ -125,7 +90,9 @@
           <a class="secondary-button" href="condominium/">Condominium</a>
           <a class="secondary-button" href="room/">Room</a>
           <a class="secondary-button" href="office/">Office</a>
-          <a class="secondary-button" href="commercial-space/">Commercial Space</a>
+          <a class="secondary-button" href="commercial-space/"
+            >Commercial Space</a
+          >
           <a class="secondary-button" href="car/">Car</a>
           <a class="secondary-button" href="land/">Land</a>
         </div>
@@ -134,7 +101,9 @@
       </section>
     </div>
 
-    <script src="../assets/js/all-listings.js"></script>
-    <script src="../assets/js/menu.js"></script>
-  </body>
+    <div id="site-footer"></div>
+
+<script src="../assets/js/all-listings.js"></script>
+    <script src="../assets/js/template.js"></script>
+</body>
 </html>
